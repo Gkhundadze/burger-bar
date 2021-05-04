@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.burger-button{
+    width: 100px;
+    height: 100px;
+    background-color: #407294;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.lines{
+    width: 90%;
+    height: 5px;
+    background-color: #fff;
+    transition: .5s ease-out;
+}
+.lines, .lines::after, .lines::before{
+    border-radius: 5px;
+}
+.lines::after, .lines::before{
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 5px;
+    
+}
+.lines::before{
+    transform: translateY(-33px);
+    transition: .5s ease-out;
+    
+}
+.lines::after{
+    transform: translateY(28px);
+    transition: .5s ease-out;
+   
+}
+.burger-button.open .lines {
+    transform: translateX(-90px);
+    background-color: transparent;
+    transition: all .5s ease-in;
+    
+}
+.burger-button.open .lines::after{
+    transition: all .5s ease-in;
+    transform: rotate(-45deg) translate(67px, 60px);
+}
+.burger-button.open .lines::before{
+    transition: all .5s ease-in;
+    transform: rotate(45deg) translate(63px, -64px);
+}
+
+/* second */
+
+.burger-button-second{
+    width: 100px;
+    height: 100px;
+    background-color: #bada55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.lines-second{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.line{
+    width: 100px;
+    height: 6px;
+    background-color: #420420;
+    border-radius: 100%;
+}
+.line-one, .line-two, .line-three{
+    transition: .4s ease-out;
+}
+.burger-button-second.clicked .line-one{
+    transform: rotate(-45deg) translate(-23px, 23px);
+    transition: .4s ease-in;
+}
+.burger-button-second.clicked .line-two{
+    height: 0px;
+    transition: .4s ease-in;
+    opacity: 0;
+}
+.burger-button-second.clicked .line-three{
+    transform: rotate(45deg) translate(-23px, -23px);
+    transition: .4s ease-in;
+}
+.first, .second{
+    text-align: center;
+}
+
+.first h2, .second h2{
+    margin-bottom: 10px;
+}
