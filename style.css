@@ -88,7 +88,7 @@ body{
 }
 .line{
     width: 100px;
-    height: 6px;
+    height: 12px;
     background-color: #420420;
     border-radius: 100%;
 }
