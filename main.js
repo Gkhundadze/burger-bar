@@ -1,10 +1,11 @@
 let burger = document.querySelector('.burger-button');
 let burgerTwo = document.querySelector('.burger-button-second');
 let themeSwitcher = document.querySelector('#checkbox');
-let switchedLabel = document.querySelector('.chackbox-label')
+let switchedLabel = document.querySelector('.chackbox-label');
+let firstList = document.querySelector('.list-first');
 burger.addEventListener('click', () => {
  burger.classList.toggle('open')
-    
+//  firstList.style.display = 'block'
 })
 burgerTwo.addEventListener('click', () => {
     burgerTwo.classList.toggle('clicked')
