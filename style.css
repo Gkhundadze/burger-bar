@@ -8,6 +8,7 @@ html{
     width: 100%;
 }
 body{
+    padding-top: 20px;
     height: 100%;
     display: flex;
     justify-content: start;
@@ -115,12 +116,12 @@ body.dark h2{
 }
 .first{
     position: fixed;
-    top: 10px;
+    top: 50px;
     left: 10px;
 }
 .second{
     position: fixed;
-    top: 10px;
+    top: 50px;
     right: 10px;
 }
 
