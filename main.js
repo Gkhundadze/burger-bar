@@ -3,7 +3,7 @@ let burgerOpen = false;
 let burgerTwo = document.querySelector('.burger-button-second');
 let themeSwitcher = document.querySelector('#checkbox');
 let switchedLabel = document.querySelector('.chackbox-label');
-
+let themeRecognizer = document.querySelector('.theme-recognizer');
 burger.addEventListener('click', () => {
  burger.classList.toggle('open')
  burgerOpen = true;
@@ -15,5 +15,4 @@ themeSwitcher.addEventListener('change', ()=> {
     switchedLabel.classList.toggle('checked')
     document.body.classList.toggle('dark')
 })
-localStorage.setItem('burgerOpen', true)
-console.log(localStorage);
+console.log(document.body.classList.value = 'dark');
