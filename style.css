@@ -201,3 +201,38 @@ h2{
     transition: .4s ease-in;
     color: #1d7451;
 }
+
+/* THIRD CUBE */
+.third-cube {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.cube-one {
+    width: 80px;
+    height: 80px;
+    background-color: #c5c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cube-two {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(9, 48, 36, 0.333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cube-three {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(230, 18, 18);
+}
